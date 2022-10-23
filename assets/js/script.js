@@ -14,14 +14,16 @@ let symbols = document.getElementById("symbols");
 // symbols.value -= 1;
 
 function count() {
-
-
 	char.innerHTML = text.value.length + " Zeichen";
 
 	words.innerHTML = text.value.trim().split(/\s+/).length + " Worte";
 	lines.innerHTML = text.value.split("\n").length + " Zeilen";
-	symbols.innerHTML =
-		text.value.split(/[!@#$%^&*+()_={};:'"<>.,?/-]/).length + " Sonderzeichen";
+
+	let regex = /[-’"/`~!#*$@_%+=.,^&(){}[]|;:”<>?\]/g;
+	let alphaNumeric = text.value.replace(regex, "");
+	let specialCount = text.value.length - alphaNumeric.length;
+
+	symbols.innerHTML = specialCount + " Sonderzeichen";
 
 	if (text.value.length === 0) {
 		stats.style.display = "none";

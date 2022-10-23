@@ -11,9 +11,14 @@ textarea {
 }
 body {
     background-color: darkslategray;
+    background-image: url(https://images.unsplash.com/photo-1605429201125-37e867327609?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1752&q=80);
+    background-position: center;
+    background-position: cover;
+    background-repeat: no-repeat;
     padding: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: all 500ms;
+    height: 100vh;
 }
 #mainDiv {
     text-align: center;
