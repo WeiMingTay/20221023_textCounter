@@ -1,0 +1,33 @@
+textarea {
+    min-width: 300px;
+    min-height: 100px;
+    transition: all 750ms;
+    accent-color: darkslategray;
+}
+body {
+    background-color: darkslategray;
+    padding: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 500ms;
+}
+#mainDiv {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    transition: all 500ms;
+}
+.status {
+    font-size: .7rem;
+}
+@media (max-width: 550px) {
+    body {
+        padding: .2rem;
+    }
+    #mainDiv {
+        padding: .2rem;
+    }
+    textarea {
+        min-width: 200px;
+        min-height: 150px;
+    }
+}
