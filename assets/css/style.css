@@ -1,8 +1,13 @@
+h1 {
+    font-size: 1.5rem;
+}
 textarea {
     min-width: 300px;
     min-height: 100px;
+    width: 80%;
     transition: all 750ms;
     accent-color: darkslategray;
+    padding: .3rem;
 }
 body {
     background-color: darkslategray;
@@ -19,15 +24,23 @@ body {
 .status {
     font-size: .7rem;
 }
+p {
+    display: inline;
+}
 @media (max-width: 550px) {
     body {
         padding: .2rem;
     }
     #mainDiv {
         padding: .2rem;
+        height: 80vh;
     }
     textarea {
         min-width: 200px;
         min-height: 150px;
+        height: 50vh;
+    }
+    p {
+        display: block;
     }
 }
